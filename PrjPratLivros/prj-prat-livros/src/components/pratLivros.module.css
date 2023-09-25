@@ -1,0 +1,184 @@
+.fPratLivros {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoPrat {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.logoPrat img {
+    width: 30rem;
+    height: 10.25rem;
+    margin: 5%;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+}
+
+.pesquisa input[type="text"] {
+    width: 50%;
+    margin-left: 3%;
+}
+
+.prateleira {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    max-width: 600px;
+}
+
+.livroItem {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.livroItem .imagem img {
+    width: 120px;
+    height: 185px;
+    border-radius: 4px;
+}
+
+.livroItem .dados {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.livroItem .botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.livroItem .avaliacao {
+    display: flex;
+    gap: 5px;
+}
+
+.pesquisa input[type="text"] {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.pesquisa input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.pesquisa button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.pesquisa button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o botão "Adicionar" */
+.botaoAdicionar {
+    padding: 8px 20px;
+    background-color: #28a745 !important;
+    /* Cor verde com !important */
+    color: #fff;
+    /* Texto em branco */
+    border: none;
+    border-radius: 20px;
+    font-size: 2.5rem !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 25px;
+    height: 40px;
+    margin-right: 5%;
+    font-weight: bold;
+    display: flex;
+    /* Adiciona o display flex para centralizar o conteúdo */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza horizontalmente o conteúdo */
+}
+
+
+.botaoAdicionar:hover {
+    background-color: #4bee0b !important;
+    /* Cor verde escura quando hover */
+}
+
+.botaoEditar {
+    background-color: #179136;
+    border-style: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.botaoEditar:hover {
+    background-color: #045a1a;
+}
+
+.botaoDeletar {
+    background-color: #e01212;
+    border-style: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.botaoDeletar:hover {
+    background-color: #9b0808;
+}
+
+@media (max-width: 767px) {
+    .prateleira {
+        width: 85%;
+    }
+
+    .livroItem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .livroItem .imagem img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .logoPrat img {
+        width: 20rem;
+        height: 7.25rem;
+        margin: 5%;
+    }
+}
