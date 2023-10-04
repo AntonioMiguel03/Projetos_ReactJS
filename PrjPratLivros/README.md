@@ -25,4 +25,3 @@ Ligar o Servidor: C\:\..\PrjPratLivros > prj-prat-livros > src > servidor > node
 
 Desligar o servidor: C\:\..\PrjPratLivros > prj-prat-livros > src > servidor > Ctrl + C
 
-Caso o servidor não inicie apague o arquivo package-lock.json
